@@ -21,7 +21,7 @@ End Sub
 Sub MaakOfferte()
     Dim MainSheet: Set MainSheet = ThisWorkbook.Sheets("Main")
     Dim WordApp: Set WordApp = CreateObject("Word.Application")
-    Dim WordDoc: Set WordDoc = WordApp.Documents.Open(Application.ActiveWorkbook.Path & "/OfferteTemplate.docx", ReadOnly:=True)
+    Dim WordDoc As Word.Document: Set WordDoc = WordApp.Documents.Open(Application.ActiveWorkbook.Path & "/OfferteTemplate.docx", ReadOnly:=True)
 
     Dim DatePart: DatePart = Format(Now, "YYYY-MM-DD")
     Dim NamePart: NamePart = MainSheet.Range("Naam").Value
