@@ -28,5 +28,6 @@ Sub MaakOfferte()
     DoSimpleReplacements WordDoc
     
     WordApp.Visible = True
-    
+    AppActivate WordApp.Caption
+
 End Sub
