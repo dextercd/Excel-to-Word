@@ -1,3 +1,5 @@
+Option Explicit
+
 Private Sub DoSimpleReplacements(ByRef WordDoc)
     Dim Finder: Set Finder = WordDoc.Content
     Finder.Find.Wrap = wdFindStop
