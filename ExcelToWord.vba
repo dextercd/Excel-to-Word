@@ -12,7 +12,7 @@ Private Sub DoSimpleReplacements(ByRef WordDoc)
 
         ' Editing a range causes .Find.Execute to break, so we use a duplicate
         Dim EditRange: Set EditRange = Finder.Duplicate
-        EditRange.Text = Range(Keyword).Value
+        EditRange.Text = Range(Keyword).Text
 
         Finder.Find.Execute
     Wend
