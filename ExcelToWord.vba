@@ -2,7 +2,6 @@ Option Explicit
 
 Private Sub DoSimpleReplacements(ByRef WordDoc)
     Dim Finder: Set Finder = WordDoc.Content
-    Finder.Find.Wrap = wdFindStop
     Finder.Find.MatchWildcards = True
     Finder.Find.Text = "#[a-zA-Z]@#"
     Finder.Find.Execute
